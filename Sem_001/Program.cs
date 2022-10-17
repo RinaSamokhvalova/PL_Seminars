@@ -5,3 +5,16 @@
 // a = 9; b = -3 -> нет 
 // a = -3 b = 9 -> да
 
+Console.Write ("Введите число: ");
+int numberA = int.Parse(Console.ReadLine());
+Console.Write ("Введите квадрат введенного вами числа: ");
+int numberB = int.Parse(Console.ReadLine());
+
+if (numberA * numberA == numberB)
+{
+    Console.WriteLine($"Правильно! Квадрат числа {numberA} равен {numberB}.");
+}
+else 
+{
+    Console.WriteLine($"Не верно! Квадрат числа {numberA} не равен {numberB}.");
+}
