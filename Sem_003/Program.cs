@@ -3,7 +3,8 @@
 // 5 -> Пятница
 
 Console.Write ("Введите число от 1 до 7: ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine() ?? "0");
+
 
 if (number == 1)
 {

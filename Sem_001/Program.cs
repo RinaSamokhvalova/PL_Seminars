@@ -6,9 +6,11 @@
 // a = -3 b = 9 -> да
 
 Console.Write ("Введите число: ");
-int numberA = int.Parse(Console.ReadLine());
+// int numberA = int.Parse(Console.ReadLine()); - выдает ошибку
+int numberA = int.Parse(Console.ReadLine() ?? "0");
 Console.Write ("Введите квадрат введенного вами числа: ");
-int numberB = int.Parse(Console.ReadLine());
+// int numberB = int.Parse(Console.ReadLine());  - выдает ошибку
+int numberB = int.Parse(Console.ReadLine() ?? "0");
 
 if (numberA * numberA == numberB)
 {
