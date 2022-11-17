@@ -4,13 +4,13 @@
 // [3 7 22 2 78] -> 76
 
 // Метод задает и распечатывает одномерный массив
-double[] GetArray(int size, int minValue, int maxValue)
+double[] GetArray(int size)
 {
     double[] res = new double[size];
     Console.WriteLine("Сформированный массив:");
     for (int i = 0; i < size; i++)
     {
-        res[i] = new Random().Next(minValue, maxValue + 1);
+        res[i] = new Random().NextDouble();
         Console.Write($"{res[i]} ");
     }
     Console.WriteLine ();
@@ -33,7 +33,7 @@ double Difference(double[] arr)
 
 Console.Write ("Введите размерность массива: ");
 int size = int.Parse(Console.ReadLine() ?? "0");
-double[] array = GetArray(size, -1000, 1000);
+double[] array = GetArray(size);
 double diff = Difference(array);
 
 Console.WriteLine($"Разницу между максимальным и минимальным элементами массива: {diff}");
