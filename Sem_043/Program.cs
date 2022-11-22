@@ -21,9 +21,9 @@ Console.Write ("Введите число k2: ");
 int lk2 = int.Parse(Console.ReadLine() ?? "0");
 Console.Write ("Введите число b2: ");
 int lb2 = int.Parse(Console.ReadLine() ?? "0");
-if (k1 == k2) 
+if (lk1 == lk2) 
 {
-    if (b1 == b2)
+    if (lb1 == lb2)
     {
         Console.WriteLine($"Прямые y = {lk1} * x + {lb1}, y = {lk2} * x + {lb2} совпадают");
     }
