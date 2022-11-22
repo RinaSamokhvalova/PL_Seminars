@@ -33,14 +33,14 @@ void PrintMatrix(int[,] matr) // Метод печатает двухмерны�
     Console.WriteLine();
 }
 
-void AverageColumns (int[,] matr)
+void AverageColumns(int[,] matr)
 {
     double[] res = new double[matr.GetLength(1)];
     for (int j = 0; j < matr.GetLength(1); j++)
     {
         for (int i = 0; i < matr.GetLength(0); i++)
         {
-            res[j] = res[j] + Convert.ToDouble(matr[i,j]);
+            res[j] = res[j] + Convert.ToDouble(matr[i, j]);
         }
         res[j] = res[j] / matr.GetLength(0);
         Console.Write($"{res[j]} ");
