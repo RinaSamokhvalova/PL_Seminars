@@ -21,5 +21,16 @@ Console.Write ("Введите число k2: ");
 int lk2 = int.Parse(Console.ReadLine() ?? "0");
 Console.Write ("Введите число b2: ");
 int lb2 = int.Parse(Console.ReadLine() ?? "0");
-double[] point = IntersectionSearch (lb1, lk1, lb2, lk2);
-Console.WriteLine($"Точкой пересечения прямых y = {lk1} * x + {lb1}, y = {lk2} * x + {lb2} является точка ({point[0]}, {point[1]})");
+if (k1 == k2) 
+{
+    if (b1 == b2)
+    {
+        Console.WriteLine($"Прямые y = {lk1} * x + {lb1}, y = {lk2} * x + {lb2} совпадают");
+    }
+    else Console.WriteLine($"Прямые y = {lk1} * x + {lb1}, y = {lk2} * x + {lb2} параллельны");
+}
+else
+{
+    double[] point = IntersectionSearch (lb1, lk1, lb2, lk2);
+    Console.WriteLine($"Точкой пересечения прямых y = {lk1} * x + {lb1}, y = {lk2} * x + {lb2} является точка ({point[0]}, {point[1]})");
+}
