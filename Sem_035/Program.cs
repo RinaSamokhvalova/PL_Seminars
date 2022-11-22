@@ -17,8 +17,8 @@ int[] GetArray(int size, int minValue, int maxValue)
         res[i] = new Random().Next(minValue, maxValue + 1);
         Console.Write($"{res[i]} ");
     }
+    Console.WriteLine();
     return res;
-    Console.WriteLine ();
 }
 
 
