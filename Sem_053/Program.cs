@@ -32,7 +32,6 @@ void ChangePositionRows(int[,] matr) // меняет местами первую
 {
     int temp = 0;
     int rowN = matr.GetLength(1) - 1;
-    Console.Write(rowN);
 
     for (int j = 0; j < matr.GetLength(1); j++)
     {
