@@ -20,21 +20,21 @@ else Console.WriteLine("Сформировать матрицу из непов�
 
 // Методы
 
-int[,,] GetMatrix3D(int sizeM, int sizeN, int sizeK, int minValue, int maxValue)
-{
-    int[,,] res = new int[sizeM, sizeN, sizeK];
-    for (int i = 0; i < sizeM; i++)
-    {
-        for (int j = 0; j < sizeN; j++)
-        {
-            for (int k = 0; k < sizeK; k++)
-            {
-                res[i, j, k] = new Random().Next(minValue, maxValue + 1);
-            }
-        }
-    }
-    return res;
-}
+// int[,,] GetMatrix3D(int sizeM, int sizeN, int sizeK, int minValue, int maxValue)
+// {
+//     int[,,] res = new int[sizeM, sizeN, sizeK];
+//     for (int i = 0; i < sizeM; i++)
+//     {
+//         for (int j = 0; j < sizeN; j++)
+//         {
+//             for (int k = 0; k < sizeK; k++)
+//             {
+//                 res[i, j, k] = new Random().Next(minValue, maxValue + 1);
+//             }
+//         }
+//     }
+//     return res;
+// }
 
 int[,,] GetMatrix3DNonRecurring(int sizeM, int sizeN, int sizeK)
 {
@@ -58,7 +58,7 @@ int[,,] GetMatrix3DNonRecurring(int sizeM, int sizeN, int sizeK)
             index++;
         }
     }
-    Console.WriteLine(String.Join(" ", tempVector)); // - вывод одномерного массива
+    // Console.WriteLine(String.Join(" ", tempVector)); // - вывод одномерного массива
     index = 0;    
     for (int i = 0; i < sizeM; i++)
     {
