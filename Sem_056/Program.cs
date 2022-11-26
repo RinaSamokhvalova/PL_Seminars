@@ -57,7 +57,7 @@ int MinSumElementRows(int[,] matr)
         sum = 0;
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            sum = sum + matr[i, j];
+            sum = sum + matr[i, j]; // sum += matr[i, j];
         }
         if (res > sum) 
         {
