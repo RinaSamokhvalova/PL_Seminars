@@ -71,7 +71,7 @@ int[,] ProductMatrix(int[,] matrA, int[,] matrB)
         {
             for (int k = 0; k < matrB.GetLength(0); k++)
             {
-                res[i, j] = res[i, j] +  matrA[i,k]*matrB[k,j];
+                res[i, j] = res[i, j] + matrA[i, k] * matrB[k, j];
             }
         }
     }
